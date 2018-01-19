@@ -96,8 +96,8 @@ there's a reason why let and const can't be redefine the way var is. */
 /*NEW is a keyword in JAVAscript. it's reserved like console.*/
 
 
-let rightNow = new Date(); //new gives you one copy or instance of what you're
-console.log(rightNow); //asking for (rightNow will only equal to the date.)
+//let rightNow = new Date(); //new gives you one copy or instance of what you're
+//console.log(rightNow); //asking for (rightNow will only equal to the date.)
 
 //FUNCTIONS and METHODS are same. date.parse ()
 
