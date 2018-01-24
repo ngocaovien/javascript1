@@ -137,3 +137,87 @@ console.log(objNumber);
 /* ARRAY is a way to store information*/
 
 var fruits = ['Apple', 'Banana']
+
+
+
+//NOTES FOR 1/23/18
+
+/* primitves can't be change. it is what it is.
+
+6 PRIMITIVES: string, number, boolean, undefined, null.
+
+BLOCKS of code. anything inside the {}
+
+VARIBLES:
+
+hoisting= java grabs the varible declarations from the beginning. takes them al
+to the top of the program. only VAR gets hoisted. hoisted to the top.
+
+one difference between VAR and LET, LET is local and won't get hoisted. LET can
+not be redefined in the same {{}}.
+
+CONST can not be change in the same {}. BLOCK.
+
+----ARRAYS---
+
+anything inside of [] is an array. */
+
+/*var myArray=[];
+
+//length of the array is how many items are in the array.
+, null
+var myArray = ["Hello World", 22, true, {}, null ];
+console.log(myArray.length);
+
+//as long as you separate by comma, you can have as many data as you want.
+
+/* object are similar but, must have key/properties
+*/
+
+/*var myObject = {
+  myString: "Hello World",  //mySting is an object property, not a varible.
+  magicNumber: 42  //you can add more, just use a comma. you can objects nested
+  //inside other objects.
+};
+
+//arrays are more compact, comapared to objects. quicker transfer of information.
+//array is a set. objects is a set of set.
+
+//ALERT, CONFRIM and PROMPT; ways to talk to user.
+/* Alert, just tell the user something.
+*/
+
+let helloMessage = alert("Hello, there! My books is only $9.99");
+
+let confirmMessage = confirm("Is your name Jesus?");
+console.log(confirmMessage);
+
+let promptMessage = prompt("Tell me the password....", "password");
+console.log(promptMessage);
+
+// alert, confirm, and prompt are all funcitons. FUNCTIONS return something.
+
+/*var firstName = prompt("What is your first name?");
+
+var lastName = prompt("What is your last name?");
+
+console.log(firstName,'is your first name.');
+
+alert(lastName + ' is your last name.');
+
+birthDate = confirm('Is your birthday 1/1/18?');
+
+if (birthDate === true) {
+  alert('1/1/18 is your birthday.')
+}*/
+
+const firstName = prompt("what is your first name?", "Maria");
+const lastName = prompt("What is your last name?", "is the best...duh");
+console.log(firstName);
+alert(lastName);
+
+//tricky parents
+
+let birthday = prompt("What's your birthday?", "Please answer in the following format 1/1/1990");
+//how do we take this info and make it an objects
+confirm( new Date(birthday)); //break this line down into parts. new date for constructive version.
