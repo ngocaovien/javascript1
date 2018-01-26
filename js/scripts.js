@@ -1,10 +1,12 @@
+/*
+
 //this is a string, anything inside quotes
 var sentence="foodie is cool";
 console.log(sentence);
 
 /*this is a number, any number, decimals ok. Not negative infinity or unreal #
 no greek number...yet*/
-
+/*
 var number=2
 console.log(number)
 
@@ -13,7 +15,7 @@ trouble shooting.*/
 
 /*boolean is true or false. logical operator. there are two states:
 open  or close, yes or no. etc.*/
-
+/*
 var yes = true
 console.log(yes)
 
@@ -37,6 +39,7 @@ block can be inifintely nested. inherit from parents but does know their kids
 */
 
 //THREE different types of varibles
+/*
 
 var firstNumber = 22; //declaration and definition
 var secondNumber = 11;
@@ -108,7 +111,7 @@ there's a reason why let and const can't be redefine the way var is. */
 ALSO date.utc()--> universal time. */
 
 //Math //is a reserved keyword
-
+/*
 var iLikePi = Math.PI;
 console.log(iLikePi);
 
@@ -124,7 +127,7 @@ console.log(newString.toUpperCase()) //object can be plugged into a function.
 
 /* anytime you take a function and add a method, it will be the value that
 you requested. and it will be appear not as the object. llok at the uppercase ahead*/
-
+/*
 var number=6;
 
 var objNumber = new Number(6)
@@ -135,7 +138,7 @@ console.log(objNumber);
 //always use the primitive form of boolean.
 
 /* ARRAY is a way to store information*/
-
+/*
 var fruits = ['Apple', 'Banana']
 
 
@@ -186,7 +189,7 @@ console.log(myArray.length);
 //ALERT, CONFRIM and PROMPT; ways to talk to user.
 /* Alert, just tell the user something.
 */
-
+/*
 let helloMessage = alert("Hello, there! My books is only $9.99");
 
 let confirmMessage = confirm("Is your name Jesus?");
@@ -210,7 +213,7 @@ birthDate = confirm('Is your birthday 1/1/18?');
 if (birthDate === true) {
   alert('1/1/18 is your birthday.')
 }*/
-
+/*
 const firstName = prompt("what is your first name?", "Maria");
 const lastName = prompt("What is your last name?", "is the best...duh");
 console.log(firstName);
@@ -222,3 +225,176 @@ let birthday = prompt("What's your birthday?", "Please answer in the following f
 //how do we take this info and make it an objects
 confirm( new Date(birthday)); //break this line down into parts. new date for constructive version.
 //this is my gh-pages branch
+
+
+//REAL DAY 3 stuff
+
+/*logical operator, how to think like a computer.
+var a = 3;
+var b = -2;
+logical AND (&&) both have to match.
+log ( a > 0 && b > 0);// expected output false
+
+locigal or
+console.log( a > 0 || b >0) /expected output: true
+
+logical NOT (!)
+*/
+//const bestNumber = 42;
+//console.log(!bestNumber); //the hell does ! do? what evers comes after the !, can it come back as true? it will return false.
+
+// ! checks for if what's after it is null. is it null? false, it is declared.
+
+//const bestNumber = "";
+//console.log(!bestNumber);
+
+//memorize when things are falsy and truthy
+
+
+/*why do we use this ?? ! ? ; we can use it in our first and last name scenario.
+look below for that example..*/
+
+//console.log(!firstName && !lastName)
+
+/*COMPARSION operators
+
+java is a loosely type language.
+
+loose vs strict */
+/*
+var string = "1"; //different type, string and number.
+var number = 1;
+
+console.log(string == number); //not the same type but are the same value.
+console.log(string === number); //false, they are not the same type
+
+// type and value for === strict
+// type for == loosely
+
+//TRUE OR FALSE
+
+//quick not about objects: if you declare two objects that are exactly the same, they are not the same.
+
+let obj1 = {name:"Vien"}; //object is not a value, but -->location of the memory.
+let obj2 = {name:"Vien"};
+
+
+/*var firstName = prompt("What is your first name?");
+
+var lastName = prompt("What is your last name?");
+
+console.log(firstName,'is your first name.');
+
+alert(lastName + ' is your last name.');
+
+birthDate = confirm('Is your birthday 1/1/18?');
+
+if (birthDate === true) {
+  alert('1/1/18 is your birthday.')
+}
+
+//if (window.confirm("Do you really want to leave?")) {
+  //window.open("Thanks for Visiting!");
+//}
+*/
+/*
+var newVariable = "hungry and hungry";
+var anotherVariable = new String(newVariable);
+
+console.log(newVariable === anotherVariable);  //false; one is a string one is an object the other primitive
+console.log(newVariable == anotherVariable); //true because they are the same value.
+
+var primitive ="hello world";
+var stringObject = new String("Hello World");
+console.log(primitive == stringObject); //the value is the SAME
+console.log(primitive === stringObject); // why is it false ?? look below.
+console.log(typeof(primitive));
+console.log(typeof(stringObject));
+
+console.log(primitive.length); //only temporarily changes it, then changes right back.
+console.log(typeof(primitive));
+
+*/
+
+//MATH stuff
+/*console.log(12 + 33)
+
+var number= "a";
+var number2 = "90";
+
+console.log(number + number2);
+
+// % modulus. modular gives back the remainder.
+// FIZZ BUZZ common way tech company test you out.
+
+//incrementer add 1 to the number(++)
+
+console.log(isNaN(number1)); // isNAN meanss "is it not" a number.
+// Nan is an Object.
+
+// is NaN === NaN? no, they are both an object.
+
+//ASSIGNMENT operators
+
+// x+= y is equal to this:  x = x + y */
+/*
+var number1 =12;
+var number2 = 780;
+
+number1 += 12; //redlecaring the varialbe again on this line. CHANGES THE VALUE OF number1
+console.log(number1) //number1 here is no longer 12.
+
+// 3 ways to convert them into a number.
+
+//one is number1= new Number(number1
+//look UP parse
+
+//CONTROL FLOW -3 differnt type that be used to make all programs and interchangeable.
+/* number one: if else.-- you your program a test, if this thing is truthy..then do this, else do this.
+
+fucntion testNum(a){
+  if (a>0)
+} else { do this!}
+ */
+/*
+ const bestMovie = "Hero";
+
+if(typeof(bestMovie) === 'string') { //typeof is how we check it to check the type of var
+  alert("yay it's a string!");
+
+} else if(typeof(bestMovie === 'number') {
+  alert('Its a number');
+  }
+} else {
+  alert("It's not a string!");
+}
+*/
+
+//Swtich statement, youwould use when many many different conditions that all
+//can be resolved with sort lines of code. Much quicker in that scenario than if else.
+// const bestMovie = [];
+// switch(typeof(bestMovie)) {
+//   case 'string': //everything after : is what we what to happen if the var is a stirng
+//     alert('Yay its a string!');
+//     break; //neneded after every switch statement, like the {} in a if else.
+//   case "number":
+//     alert("It's a number!");
+//     break;
+//   case "boolean":
+//     alert("It's a bool!");
+//     break;
+//   case "object":
+//     alert('object');
+//     break;
+//     default: //in any other case do this.
+//     alert("its an array");
+//     break;
+// }
+
+//TENARIES good for yes or no, true or false questions, but don't nest them.
+
+
+const bestMovie= [];
+
+bestMovie !== undefined ? alert('it exists') : alert('it doesn\'t exist');
+//if it is true, what i write after the ? will happen, then : is what to do if it's not true. DONT NEST
